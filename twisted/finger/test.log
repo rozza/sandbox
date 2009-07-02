@@ -1,0 +1,185 @@
+2009/07/01 23:41 +0100 [-] Log opened.
+2009/07/01 23:41 +0100 [-] twistd 2.5.0 (/System/Library/Frameworks/Python.framework/Versions/2.5/Resources/Python.app/Contents/MacOS/Python 2.5.1) starting up
+2009/07/01 23:41 +0100 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>
+2009/07/01 23:41 +0100 [-] Loading finger12.tac...
+2009/07/01 23:41 +0100 [-] Loaded.
+2009/07/01 23:41 +0100 [-] __builtin__.FingerFactory starting on 79
+2009/07/01 23:41 +0100 [-] Starting factory <__builtin__.FingerFactory instance at 0x765c88>
+2009/07/01 23:41 +0100 [-] __builtin__.FingerSetterFactory starting on 1079
+2009/07/01 23:41 +0100 [-] Starting factory <__builtin__.FingerSetterFactory instance at 0x768df0>
+2009/07/01 23:41 +0100 [-] set uid/gid 1/1
+2009/07/01 23:41 +0100 [FingerSetterProtocol,0,127.0.0.1] []
+2009/07/01 23:41 +0100 [FingerSetterProtocol,0,127.0.0.1] OK
+2009/07/01 23:41 +0100 [FingerSetterProtocol,0,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/application/app.py", line 113, in runReactorWithLogging
+	    reactor.run()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 220, in run
+	    self.mainLoop()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 231, in mainLoop
+	    self.doIteration(t)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 133, in doSelect
+	    _logrun(selectable, _drdw, selectable, method, dict)
+	--- <exception caught here> ---
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 48, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 33, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 59, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 37, in callWithContext
+	    return func(*args,**kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 149, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, method=="doRead")
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 252, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 405, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 416, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "finger12.tac", line 45, in connectionLost
+	    self.factory.setUser(*self.lines[:2])
+	exceptions.TypeError:  expected 2 arguments, got 0
+	
+2009/07/01 23:42 +0100 [FingerSetterProtocol,1,127.0.0.1] ['ross', 'is cool']
+2009/07/01 23:42 +0100 [FingerSetterProtocol,1,127.0.0.1] OK
+2009/07/01 23:43 +0100 [FingerSetterProtocol,2,127.0.0.1] []
+2009/07/01 23:43 +0100 [FingerSetterProtocol,2,127.0.0.1] OK
+2009/07/01 23:43 +0100 [FingerSetterProtocol,2,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/application/app.py", line 113, in runReactorWithLogging
+	    reactor.run()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 220, in run
+	    self.mainLoop()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 231, in mainLoop
+	    self.doIteration(t)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 133, in doSelect
+	    _logrun(selectable, _drdw, selectable, method, dict)
+	--- <exception caught here> ---
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 48, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 33, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 59, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 37, in callWithContext
+	    return func(*args,**kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 149, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, method=="doRead")
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 252, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 405, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 416, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "finger12.tac", line 45, in connectionLost
+	    self.factory.setUser(*self.lines[:2])
+	exceptions.TypeError:  expected 2 arguments, got 0
+	
+2009/07/01 23:45 +0100 [FingerSetterProtocol,3,127.0.0.1] []
+2009/07/01 23:45 +0100 [FingerSetterProtocol,3,127.0.0.1] OK
+2009/07/01 23:45 +0100 [FingerSetterProtocol,3,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/application/app.py", line 113, in runReactorWithLogging
+	    reactor.run()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 220, in run
+	    self.mainLoop()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 231, in mainLoop
+	    self.doIteration(t)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 133, in doSelect
+	    _logrun(selectable, _drdw, selectable, method, dict)
+	--- <exception caught here> ---
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 48, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 33, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 59, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 37, in callWithContext
+	    return func(*args,**kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 149, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, method=="doRead")
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 252, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 405, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 416, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "finger12.tac", line 45, in connectionLost
+	    self.factory.setUser(*self.lines[:2])
+	exceptions.TypeError:  expected 2 arguments, got 0
+	
+2009/07/01 23:47 +0100 [FingerSetterProtocol,4,127.0.0.1] []
+2009/07/01 23:47 +0100 [FingerSetterProtocol,4,127.0.0.1] OK
+2009/07/01 23:47 +0100 [FingerSetterProtocol,4,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/application/app.py", line 113, in runReactorWithLogging
+	    reactor.run()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 220, in run
+	    self.mainLoop()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 231, in mainLoop
+	    self.doIteration(t)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 133, in doSelect
+	    _logrun(selectable, _drdw, selectable, method, dict)
+	--- <exception caught here> ---
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 48, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 33, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 59, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 37, in callWithContext
+	    return func(*args,**kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 149, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, method=="doRead")
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 252, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 405, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 416, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "finger12.tac", line 45, in connectionLost
+	    self.factory.setUser(*self.lines[:2])
+	exceptions.TypeError:  expected 2 arguments, got 0
+	
+2009/07/01 23:48 +0100 [FingerSetterProtocol,5,127.0.0.1] []
+2009/07/01 23:48 +0100 [FingerSetterProtocol,5,127.0.0.1] OK
+2009/07/01 23:48 +0100 [FingerSetterProtocol,5,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/application/app.py", line 113, in runReactorWithLogging
+	    reactor.run()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 220, in run
+	    self.mainLoop()
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 231, in mainLoop
+	    self.doIteration(t)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 133, in doSelect
+	    _logrun(selectable, _drdw, selectable, method, dict)
+	--- <exception caught here> ---
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 48, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/log.py", line 33, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 59, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/python/context.py", line 37, in callWithContext
+	    return func(*args,**kw)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/selectreactor.py", line 149, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, method=="doRead")
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/posixbase.py", line 252, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 405, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/twisted/internet/tcp.py", line 416, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "finger12.tac", line 45, in connectionLost
+	    self.factory.setUser(*self.lines[:2])
+	exceptions.TypeError:  expected 2 arguments, got 0
+	
+2009/07/01 23:50 +0100 [-] Received SIGTERM, shutting down.
+2009/07/01 23:50 +0100 [-] (Port 1079 Closed)
+2009/07/01 23:50 +0100 [-] Stopping factory <__builtin__.FingerSetterFactory instance at 0x768df0>
+2009/07/01 23:50 +0100 [-] (Port 79 Closed)
+2009/07/01 23:50 +0100 [-] Stopping factory <__builtin__.FingerFactory instance at 0x765c88>
+2009/07/01 23:50 +0100 [-] Main loop terminated.
+2009/07/01 23:50 +0100 [-] Warning: No permission to delete pid file
+2009/07/01 23:50 +0100 [-] Server Shut Down.
